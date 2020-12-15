@@ -1,0 +1,10 @@
+{
+  "name": "wwii-map",
+  "version": "0.0.1",
+  "description": "WWII Map Project",
+  "main": "index.ts",
+  "repository": "git@github.com:rsosars/wwii-map.git",
+  "author": "Reinis Sosars <rsosars@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
