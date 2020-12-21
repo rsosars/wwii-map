@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@types/react": "^17.0.0",
     "css-loader": "^5.0.1",
     "html-webpack-plugin": "^4.5.0",
     "sass": "^1.30.0",
@@ -23,5 +24,9 @@
   "scripts": {
     "start": "webpack --config webpack.common.js",
     "dev": "webpack-dev-server --config webpack.dev.js --open"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
