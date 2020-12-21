@@ -29,8 +29,14 @@ body {
 .event-details {
   width: 100%;
   height: 20vh;
+  min-height: 90vh;
   background-color: rgba(0, 128, 0, 1);
   margin-top: auto;
+  transition: .5s;
+}
+
+.expanded {
+  transform: translateY(-70vh);
 }
 
 #app {
