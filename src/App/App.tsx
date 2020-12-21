@@ -11,9 +11,9 @@ export interface IAppState {
 export class App extends React.Component<IAppProps, IAppState> {
 	public render() {
 		return(
-			<>
-				<h1>Hello World</h1>
-			</>
+			<div className={"app-container"}>
+
+			</div>
 		);
 	}
 }
