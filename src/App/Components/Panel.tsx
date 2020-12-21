@@ -10,6 +10,6 @@ export interface IPanelState {
 
 export class Panel extends React.Component<IPanelProps, IPanelState> {
 	public render() {
-		return undefined;
+		return (<div className="panel">Side Panel</div>);
 	}
 }
