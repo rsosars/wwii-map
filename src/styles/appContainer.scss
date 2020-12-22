@@ -14,13 +14,13 @@ body {
 .map {
   display: flex;
   background-color: rgba(0, 0, 255, 0.1);
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 }
 
-.panel{
+.panel {
   height: 100vh;
-  width: 40vh;
+  width: 40vw;
   background-color: rgba(0, 255, 255, 0.1);
   display: flex;
   margin-left: auto;
@@ -29,15 +29,18 @@ body {
 }
 
 .event-details {
-  width: 100%;
-  height: 20vh;
+  min-height: 100px;
+  height: 900px;
+  transform: translateY(-100px);
   background-color: rgba(0, 128, 0, 1);
   margin-top: auto;
   transition: .5s;
 }
 
 .expanded {
-  transform: translateY(-70vh);
+  transform: translateY(-800px);
+  min-height: 800px;
+  overflow: hidden;
 }
 
 #app {

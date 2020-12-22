@@ -7,16 +7,32 @@ export interface IAppProps extends React.ClassAttributes<IAppProps> {
 }
 
 export interface IAppState {
-
+	expanded: boolean
 }
 
 export class App extends React.Component<IAppProps, IAppState> {
+
+	constructor(props: IAppProps) {
+		super(props)
+		this.state = {
+			expanded:false
+		}
+		this.togglePanel = this.togglePanel.bind(this);
+	}
+
+	togglePanel() {
+		this.setState({
+			expanded: !this.state.expanded
+		})
+		console.log(JSON.stringify(this.state));
+	}
+
 	public render() {
 		return(
 			<>
 				<div className="firstColumn">
 					<Map/>
-					<EventDetails title="test"/>
+					<EventDetails title="test" expanded={this.state.expanded} onClick={this.togglePanel}/>
 				</div>
 				<Panel></Panel>
 			</>
