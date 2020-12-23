@@ -1,0 +1,56 @@
+[
+  {
+	"date": "September 1939",
+	"events": [
+	  {
+		"date": "1st September 1939",
+		"description": "Invasion of Poland by German forces"
+	  },
+	  {
+		"date": "1st September 1939",
+		"description": "Invasion of Poland by German forces"
+	  },
+	  {
+		"date": "1st September 1939",
+		"description": "Invasion of Poland by German forces"
+	  },
+	  {
+		"date": "1st September 1939",
+		"description": "Invasion of Poland by German forces"
+	  },
+	  {
+		"date": "1st September 1939",
+		"description": "Invasion of Poland by German forces"
+	  },
+	  {
+		"date": "1st September 1939",
+		"description": "Invasion of Poland by German forces"
+	  }
+	]
+  },
+  {
+	"date": "November 1939",
+	"events": [
+	  {
+		"date": "30th November 1939",
+		"description": "Soviet invasion of Finland"
+	  },
+	  {
+		"date": "30th November 1939",
+		"description": "Soviet invasion of Finland"
+	  },
+	  {
+		"date": "30th November 1939",
+		"description": "Soviet invasion of Finland"
+	  },
+	  {
+		"date": "30th November 1939",
+		"description": "Soviet invasion of Finland"
+	  },
+	  {
+		"date": "30th November 1939",
+		"description": "Soviet invasion of Finland"
+	  }
+	]
+  }
+]
