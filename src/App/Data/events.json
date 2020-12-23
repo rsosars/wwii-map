@@ -1,0 +1,18 @@
+{
+    "events":[
+        {
+            "id": "1",
+            "name":"WORLD WAR II BEGINS",
+            "description":"Germany invades Poland, inciting Poland’s allies Britain and France to declare war on Germany.",
+            "center": { 
+                "lat": 52.5200, 
+                "lng": 13.4050
+            },
+            "event-type": [
+                "war", "invasion"
+            ],
+            "nation":"germany",
+            "alliance": "axis"
+        }
+    ]
+}
