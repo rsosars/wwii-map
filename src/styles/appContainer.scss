@@ -3,8 +3,51 @@ body {
   margin: 0;
 }
 
+.firstColumn {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  display: flex;
+  background-color: rgba(0, 0, 255, 0.1);
+  height: 100vh;
+  width: 100%;
+}
+
+.panel {
+  height: 100vh;
+  width: 40vw;
+  background-color: rgba(0, 255, 255, 0.1);
+  display: flex;
+  margin-left: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.event-details {
+  min-height: 100px;
+  height: 900px;
+  transform: translateY(-100px);
+  background-color: rgba(0, 128, 0, 1);
+  margin-top: auto;
+  transition: .5s;
+}
+
+.expanded {
+  transform: translateY(-800px);
+  min-height: 800px;
+  overflow: hidden;
+}
+
 #app {
   position: absolute;
   height: 100%;
   width: 100%;
+  display: flex;
+  background: rgba(255, 255, 0, 0.1);
+  flex-direction: row;
 }

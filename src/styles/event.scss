@@ -1,0 +1,24 @@
+.event-list {
+    width: 100%;
+}
+
+.event {
+    margin: 16px 0px;
+    background: burlywood;
+    padding: 12px;
+    width: 100%;
+}
+
+.event-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.event-date {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
