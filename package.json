@@ -27,6 +27,7 @@
     "dev": "webpack-dev-server --config webpack.dev.js --open"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
