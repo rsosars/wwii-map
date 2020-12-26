@@ -23,6 +23,12 @@
     margin-bottom: 12px;
 }
 
+.selected {
+    border-width: 3px;
+    border-color: red;
+    border-style: solid;
+}
+
 .period-title {
     font-family: 'Times New Roman', Times, serif;
 }

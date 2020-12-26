@@ -1,55 +1,31 @@
 [
   {
+	"id": "aab11fcf-5a8b-48f8-b130-6c5cdf641cdb",
 	"date": "September 1939",
 	"events": [
 	  {
+		"id":"a84a603e-bc6a-496a-984a-4f960cfa04f0",
 		"date": "1st September 1939",
-		"description": "Invasion of Poland by German forces"
-	  },
-	  {
-		"date": "1st September 1939",
-		"description": "Invasion of Poland by German forces"
-	  },
-	  {
-		"date": "1st September 1939",
-		"description": "Invasion of Poland by German forces"
-	  },
-	  {
-		"date": "1st September 1939",
-		"description": "Invasion of Poland by German forces"
-	  },
-	  {
-		"date": "1st September 1939",
-		"description": "Invasion of Poland by German forces"
-	  },
-	  {
-		"date": "1st September 1939",
-		"description": "Invasion of Poland by German forces"
+		"description": "Invasion of Poland by German forces",
+		"location": {
+			"lat": 52.2297,
+			"lng": 21.0122
+		}
 	  }
 	]
   },
   {
+	"id":"738b3ff0-d221-4b24-940a-5a6c6d1dcb7d",
 	"date": "November 1939",
 	"events": [
 	  {
+		"id":"cf21c738-9473-4d52-82ed-5debb57ffd1c",
 		"date": "30th November 1939",
-		"description": "Soviet invasion of Finland"
-	  },
-	  {
-		"date": "30th November 1939",
-		"description": "Soviet invasion of Finland"
-	  },
-	  {
-		"date": "30th November 1939",
-		"description": "Soviet invasion of Finland"
-	  },
-	  {
-		"date": "30th November 1939",
-		"description": "Soviet invasion of Finland"
-	  },
-	  {
-		"date": "30th November 1939",
-		"description": "Soviet invasion of Finland"
+		"description": "Soviet invasion of Finland",
+		"location": {
+			"lat": 60.1699,
+			"lng": 24.9384
+		}
 	  }
 	]
   }

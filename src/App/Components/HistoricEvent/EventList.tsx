@@ -4,6 +4,7 @@ import {EventListItem} from "./EventListItem";
 import {PeriodTitleCard} from "./PeriodTitleCard";
 
 interface IEventListProps {
+    selectedEventId: string;
     events: IHistoricPeriod[];
 }
 
@@ -25,13 +26,15 @@ export class EventList extends React.Component<IEventListProps, IEventListState>
     private get listComponents(): React.ReactNode {
        return this.props.events.map((period: IHistoricPeriod) => {
             const items = period.events.map((event) => (<EventListItem
+                key= {event.id}
                 title={event.description}
                 dateDisplayed={event.date}
+                selected={ event.id === this.props.selectedEventId}
             />));
 
             return (
                 <>
-                    <PeriodTitleCard title={period.date}/>
+                    <PeriodTitleCard key={period.id} title={period.date}/>
                     {items}
                 </>
             );
