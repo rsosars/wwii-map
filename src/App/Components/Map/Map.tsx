@@ -21,7 +21,7 @@ export class Map extends React.Component<MapProps, {}> {
         <div id="map-container">
          <MapControls/>
          <LoadScript
-          googleMapsApiKey="AIzaSyBsCwln3llWLvG66If_q6EzZWLRU4SPPx8"
+          googleMapsApiKey=""
         >
           <GoogleMap mapContainerClassName={"map"}
             center={this.props.center}
