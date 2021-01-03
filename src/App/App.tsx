@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Panel } from "./Components/Panel";
-import { Map } from "./Components/Map";
+import { Map } from "./Components/Map/Map";
 import EventDetails from "./Components/EventDetails";
 import historicPeriods from "../data/mockEvents.json"
 import { IHistoricEvent } from "../Interfaces/IHistoricEvent";
