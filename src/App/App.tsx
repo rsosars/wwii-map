@@ -35,6 +35,8 @@ export class App extends React.Component<IAppProps, IAppState> {
 			selectedEventIndex: 0,
 		}
 		this.togglePanel = this.togglePanel.bind(this);
+		this.onNextEvent = this.onNextEvent.bind(this);
+		this.onPrevEvent = this.onPrevEvent.bind(this);
 	}
 
 	togglePanel() {
@@ -44,11 +46,34 @@ export class App extends React.Component<IAppProps, IAppState> {
 		console.log(JSON.stringify(this.state));
 	}
 
+	onNextEvent() {
+		let index = this.state.selectedEventIndex;
+		if (index <= this.state.events.length - 2) {
+			index = index + 1
+			this.setState(
+				{selectedEventIndex: index}
+			)
+		}
+	}
+
+	onPrevEvent() {
+		let index = this.state.selectedEventIndex;
+		if (index >= 1) {
+			index = index - 1
+			this.setState(
+				{selectedEventIndex: index}
+			)
+		}
+	}
+
 	public render() {
 		return(
 			<>
 				<div className="firstColumn">
-					<Map center={ this.state.events[this.state.selectedEventIndex].location }/>
+					<Map 
+						center={ this.state.events[this.state.selectedEventIndex].location }
+						mapControlFunctions={{onNextClick: this.onNextEvent, onPrevClick: this.onPrevEvent}}
+						/>
 					<EventDetails title="test" expanded={this.state.expanded} onClick={this.togglePanel}/>
 				</div>
 				<Panel events={this.state.periods} selectedEventId={ this.state.events[this.state.selectedEventIndex].id}></Panel>
