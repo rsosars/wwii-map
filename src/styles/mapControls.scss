@@ -1,0 +1,56 @@
+$containerHeight: 32px;
+
+
+.map-control-panel {
+    display: inline-grid;
+    grid-template-columns: 0.6fr 1.8fr 0.6fr;;
+    background: $oliveGreen;
+    padding: 8px;
+    position: absolute;
+    height: $containerHeight;
+    width: 440px;
+    float: left;
+    z-index: 1000;
+    left:0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 24px;
+    border-radius: 12px;
+    align-items: center; 
+    border: solid 3px rgb(54, 38, 9);
+  }
+
+.map-button {
+    display: flex;
+    height: 28px;
+    justify-content: center;
+    background: $redButton;
+    width: 78px;
+    text-align: center;
+    align-items: center; 
+    vertical-align: middle;
+    transition: all .3s;
+
+    &:hover {
+        background: $redButtonHover;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        color: $textBlackDisabled;
+        background: $redButtonDisabled;
+        cursor: not-allowed;
+    }
+}
+
+.map-button:last-of-type {
+    justify-self: end;
+}
+
+.map-control-curent-date {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+

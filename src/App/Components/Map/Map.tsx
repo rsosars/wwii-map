@@ -1,8 +1,10 @@
 import * as React from "react";
 import { Circle, GoogleMap, LoadScript } from '@react-google-maps/api'
+import {MapControls, MapControlsProps} from "./MapControls"
 
 type MapProps = {
     center: MapPosition
+    mapControlProps: MapControlsProps
 }
 
 type MapPosition = {
@@ -16,7 +18,15 @@ export class Map extends React.Component<MapProps, {}> {
     }
     
     render() {
+      const {mapControlProps} = this.props
       return (
+        <div id="map-container">
+         <MapControls 
+          onNextClick={mapControlProps.onNextClick}
+          onPrevClick={mapControlProps.onPrevClick}
+          numberOfElements={mapControlProps.numberOfElements} 
+					currentElement={mapControlProps.currentElement}
+          />
          <LoadScript
           googleMapsApiKey=""
         >
@@ -28,6 +38,7 @@ export class Map extends React.Component<MapProps, {}> {
             <Circle center={this.props.center} radius={15000}/>
           </GoogleMap>
         </LoadScript>
+        </div>
       )
     }
  
