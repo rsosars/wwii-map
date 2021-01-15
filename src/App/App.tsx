@@ -72,8 +72,12 @@ export class App extends React.Component<IAppProps, IAppState> {
 				<div className="firstColumn">
 					<Map 
 						center={ this.state.events[this.state.selectedEventIndex].location }
-						mapControlFunctions={{onNextClick: this.onNextEvent, onPrevClick: this.onPrevEvent}}
-						/>
+						mapControlProps={{
+							onNextClick: this.onNextEvent, 
+							onPrevClick: this.onPrevEvent,
+							numberOfElements: this.state.events.length,
+							currentElement: this.state.selectedEventIndex
+						}}/>
 					<EventDetails title="test" expanded={this.state.expanded} onClick={this.togglePanel}/>
 				</div>
 				<Panel events={this.state.periods} selectedEventId={ this.state.events[this.state.selectedEventIndex].id}></Panel>

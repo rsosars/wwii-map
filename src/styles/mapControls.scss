@@ -4,7 +4,7 @@ $containerHeight: 32px;
 .map-control-panel {
     display: inline-grid;
     grid-template-columns: 0.6fr 1.8fr 0.6fr;;
-    background: rgba(46, 87, 62, 0.95);
+    background: $oliveGreen;
     padding: 8px;
     position: absolute;
     height: $containerHeight;
@@ -25,11 +25,23 @@ $containerHeight: 32px;
     display: flex;
     height: 28px;
     justify-content: center;
-    background: red;
+    background: $redButton;
     width: 78px;
     text-align: center;
     align-items: center; 
     vertical-align: middle;
+    transition: all .3s;
+
+    &:hover {
+        background: $redButtonHover;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        color: $textBlackDisabled;
+        background: $redButtonDisabled;
+        cursor: not-allowed;
+    }
 }
 
 .map-button:last-of-type {
@@ -38,7 +50,7 @@ $containerHeight: 32px;
 
 .map-control-curent-date {
     text-align: center;
-    color: rgb(228, 221, 129);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 

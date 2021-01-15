@@ -4,7 +4,7 @@ import {MapControls, MapControlsProps} from "./MapControls"
 
 type MapProps = {
     center: MapPosition
-    mapControlFunctions: MapControlsProps
+    mapControlProps: MapControlsProps
 }
 
 type MapPosition = {
@@ -18,11 +18,14 @@ export class Map extends React.Component<MapProps, {}> {
     }
     
     render() {
+      const {mapControlProps} = this.props
       return (
         <div id="map-container">
          <MapControls 
-          onNextClick={this.props.mapControlFunctions.onNextClick}
-          onPrevClick={this.props.mapControlFunctions.onPrevClick}
+          onNextClick={mapControlProps.onNextClick}
+          onPrevClick={mapControlProps.onPrevClick}
+          numberOfElements={mapControlProps.numberOfElements} 
+					currentElement={mapControlProps.currentElement}
           />
          <LoadScript
           googleMapsApiKey=""

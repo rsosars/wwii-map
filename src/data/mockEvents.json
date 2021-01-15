@@ -26,7 +26,17 @@
 			"lat": 60.1699,
 			"lng": 24.9384
 		}
+	  },
+	  {
+		"id":"cf21c738-9473-4d52-82ed-5debb57ffd1d",
+		"date": "3rd December 1940",
+		"description": "Test for 3rd Major event",
+		"location": {
+			"lat": 63.1699,
+			"lng": 24.9384
+		}
 	  }
+	  
 	]
   }
 ]
